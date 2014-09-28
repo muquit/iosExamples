@@ -20,4 +20,4 @@ Tested with iOS 7.1 and 8.0
 ## Copyright
 MIT
 
-* The Icons are created with inkscape from the [AppIconTemplate.svg](http://kodira.de/2013/11/ios-7-app-icon-template-inkscape-svg-editor/). The globe is modified from [openclipart.org](https://openclipart.org/detail/121609/globe-by-jongo_jingaro-121609)
+* The Icons are created with (inkscape)[http://www.inkscape.org/] from the [AppIconTemplate.svg](http://kodira.de/2013/11/ios-7-app-icon-template-inkscape-svg-editor/). The globe is modified from [openclipart.org](https://openclipart.org/detail/121609/globe-by-jongo_jingaro-121609)
