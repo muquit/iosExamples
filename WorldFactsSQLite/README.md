@@ -16,7 +16,7 @@ From this app you can learn:
 
 Tested with iOS 7.1 and 8.0
 
-In order to run/play, please open **WorldFactsSQLite.xcworkspace** in xcode (NOT WorldFactsSQLite.xcodeproj, because this project uses FMDB as [CocoaPods](http://cocoapods.org/))
+In order to run/play, please open **WorldFactsSQLite.xcworkspace** in xcode (NOT WorldFactsSQLite.xcodeproj, because this project uses [FMDB](https://github.com/ccgus/fmdb) as [CocoaPods](http://cocoapods.org/))
 
 ## Schema
 
