@@ -1,0 +1,6085 @@
+-- 
+-- Created from countries.plist file of the project
+-- WordFacts https://github.com/kharrison/CodeExamples/tree/master/WorldFacts
+-- muquit@muquit.com Aug-30-2014 
+---
+DROP TABLE IF EXISTS version;
+CREATE TABLE version
+(
+    id INTEGER PRIMARY KEY UNIQUE,
+    version_no INTEGER,
+    date DATE
+);
+
+DROP TABLE IF EXISTS country;
+CREATE TABLE country
+(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    country_name TEXT UNIQUE,
+    capital TEXT,
+    area_sqkm INTEGER,
+    area_sqmi INTEGER,
+    population INTEGER,
+    continent TEXT,
+    tld TEXT,
+    currency TEXT,
+    phone TEXT
+);
+INSERT INTO version
+( 
+    version_no,
+    date
+)
+VALUES
+(
+    1,
+    date('now')
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Andorra",
+  "Andorra la Vella",
+  468,
+  180,
+  84000,
+  "EU",
+  ".ad",
+  "Euro",
+  "376"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "United Arab Emirates",
+  "Abu Dhabi",
+  82880,
+  31999,
+  4975593,
+  "AS",
+  ".ae",
+  "Dirham",
+  "971"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Afghanistan",
+  "Kabul",
+  647500,
+  249999,
+  29121286,
+  "AS",
+  ".af",
+  "Afghani",
+  "93"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Antigua and Barbuda",
+  "St. John's",
+  443,
+  171,
+  86754,
+  "NA",
+  ".ag",
+  "Dollar",
+  "+1-268"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Anguilla",
+  "The Valley",
+  102,
+  39,
+  13254,
+  "NA",
+  ".ai",
+  "Dollar",
+  "+1-264"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Albania",
+  "Tirana",
+  28748,
+  11099,
+  2986952,
+  "EU",
+  ".al",
+  "Lek",
+  "355"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Armenia",
+  "Yerevan",
+  29800,
+  11505,
+  2968000,
+  "AS",
+  ".am",
+  "Dram",
+  "374"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Angola",
+  "Luanda",
+  1246700,
+  481350,
+  13068161,
+  "AF",
+  ".ao",
+  "Kwanza",
+  "244"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Antarctica",
+  "",
+  14000000,
+  5405400,
+  0,
+  "AN",
+  ".aq",
+  "",
+  ""
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Argentina",
+  "Buenos Aires",
+  2766890,
+  1068296,
+  41343201,
+  "SA",
+  ".ar",
+  "Peso",
+  "54"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "American Samoa",
+  "Pago Pago",
+  199,
+  76,
+  57881,
+  "OC",
+  ".as",
+  "Dollar",
+  "+1-684"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Austria",
+  "Vienna",
+  83858,
+  32377,
+  8205000,
+  "EU",
+  ".at",
+  "Euro",
+  "43"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Australia",
+  "Canberra",
+  7686850,
+  2967892,
+  21515754,
+  "OC",
+  ".au",
+  "Dollar",
+  "61"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Aruba",
+  "Oranjestad",
+  193,
+  74,
+  71566,
+  "NA",
+  ".aw",
+  "Guilder",
+  "297"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Aland Islands",
+  "Mariehamn",
+  0,
+  0,
+  26711,
+  "EU",
+  ".ax",
+  "Euro",
+  "+358-18"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Azerbaijan",
+  "Baku",
+  86600,
+  33436,
+  8303512,
+  "AS",
+  ".az",
+  "Manat",
+  "994"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Bosnia and Herzegovina",
+  "Sarajevo",
+  51129,
+  19740,
+  4590000,
+  "EU",
+  ".ba",
+  "Marka",
+  "387"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Barbados",
+  "Bridgetown",
+  431,
+  166,
+  285653,
+  "NA",
+  ".bb",
+  "Dollar",
+  "+1-246"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Bangladesh",
+  "Dhaka",
+  144000,
+  55598,
+  156118464,
+  "AS",
+  ".bd",
+  "Taka",
+  "880"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Belgium",
+  "Brussels",
+  30510,
+  11779,
+  10403000,
+  "EU",
+  ".be",
+  "Euro",
+  "32"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Burkina Faso",
+  "Ouagadougou",
+  274200,
+  105868,
+  16241811,
+  "AF",
+  ".bf",
+  "Franc",
+  "226"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Bulgaria",
+  "Sofia",
+  110910,
+  42822,
+  7148785,
+  "EU",
+  ".bg",
+  "Lev",
+  "359"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Bahrain",
+  "Manama",
+  665,
+  256,
+  738004,
+  "AS",
+  ".bh",
+  "Dinar",
+  "973"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Burundi",
+  "Bujumbura",
+  27830,
+  10745,
+  9863117,
+  "AF",
+  ".bi",
+  "Franc",
+  "257"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Benin",
+  "Porto-Novo",
+  112620,
+  43482,
+  9056010,
+  "AF",
+  ".bj",
+  "Franc",
+  "229"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Saint Barthelemy",
+  "Gustavia",
+  21,
+  8,
+  8450,
+  "NA",
+  ".gp",
+  "Euro",
+  "590"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Bermuda",
+  "Hamilton",
+  53,
+  20,
+  65365,
+  "NA",
+  ".bm",
+  "Dollar",
+  "+1-441"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Brunei",
+  "Bandar Seri Begawan",
+  5770,
+  2227,
+  395027,
+  "AS",
+  ".bn",
+  "Dollar",
+  "673"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Bolivia",
+  "Sucre",
+  1098580,
+  424161,
+  9947418,
+  "SA",
+  ".bo",
+  "Boliviano",
+  "591"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Bonaire, Saint Eustatius and Saba ",
+  "",
+  0,
+  0,
+  18012,
+  "NA",
+  ".bq",
+  "Dollar",
+  "599"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Brazil",
+  "Brasilia",
+  8511965,
+  3286469,
+  201103330,
+  "SA",
+  ".br",
+  "Real",
+  "55"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Bahamas",
+  "Nassau",
+  13940,
+  5382,
+  301790,
+  "NA",
+  ".bs",
+  "Dollar",
+  "+1-242"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Bhutan",
+  "Thimphu",
+  47000,
+  18146,
+  699847,
+  "AS",
+  ".bt",
+  "Ngultrum",
+  "975"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Bouvet Island",
+  "",
+  0,
+  0,
+  0,
+  "AN",
+  ".bv",
+  "Krone",
+  ""
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Botswana",
+  "Gaborone",
+  600370,
+  231802,
+  2029307,
+  "AF",
+  ".bw",
+  "Pula",
+  "267"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Belarus",
+  "Minsk",
+  207600,
+  80154,
+  9685000,
+  "EU",
+  ".by",
+  "Ruble",
+  "375"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Belize",
+  "Belmopan",
+  22966,
+  8867,
+  314522,
+  "NA",
+  ".bz",
+  "Dollar",
+  "501"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Canada",
+  "Ottawa",
+  9984670,
+  3855081,
+  33679000,
+  "NA",
+  ".ca",
+  "Dollar",
+  "1"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Cocos Islands",
+  "West Island",
+  14,
+  5,
+  628,
+  "AS",
+  ".cc",
+  "Dollar",
+  "61"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Democratic Republic of the Congo",
+  "Kinshasa",
+  2345410,
+  905562,
+  70916439,
+  "AF",
+  ".cd",
+  "Franc",
+  "243"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Central African Republic",
+  "Bangui",
+  622984,
+  240534,
+  4844927,
+  "AF",
+  ".cf",
+  "Franc",
+  "236"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Republic of the Congo",
+  "Brazzaville",
+  342000,
+  132046,
+  3039126,
+  "AF",
+  ".cg",
+  "Franc",
+  "242"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Switzerland",
+  "Berne",
+  41290,
+  15942,
+  7581000,
+  "EU",
+  ".ch",
+  "Franc",
+  "41"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Ivory Coast",
+  "Yamoussoukro",
+  322460,
+  124501,
+  21058798,
+  "AF",
+  ".ci",
+  "Franc",
+  "225"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Cook Islands",
+  "Avarua",
+  240,
+  92,
+  21388,
+  "OC",
+  ".ck",
+  "Dollar",
+  "682"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Chile",
+  "Santiago",
+  756950,
+  292258,
+  16746491,
+  "SA",
+  ".cl",
+  "Peso",
+  "56"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Cameroon",
+  "Yaounde",
+  475440,
+  183567,
+  19294149,
+  "AF",
+  ".cm",
+  "Franc",
+  "237"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "China",
+  "Beijing",
+  9596960,
+  3705386,
+  1330044000,
+  "AS",
+  ".cn",
+  "Yuan Renminbi",
+  "86"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Colombia",
+  "Bogota",
+  1138910,
+  439733,
+  44205293,
+  "SA",
+  ".co",
+  "Peso",
+  "57"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Costa Rica",
+  "San Jose",
+  51100,
+  19729,
+  4516220,
+  "NA",
+  ".cr",
+  "Colon",
+  "506"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Cuba",
+  "Havana",
+  110860,
+  42803,
+  11423000,
+  "NA",
+  ".cu",
+  "Peso",
+  "53"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Cape Verde",
+  "Praia",
+  4033,
+  1557,
+  508659,
+  "AF",
+  ".cv",
+  "Escudo",
+  "238"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Curacao",
+  " Willemstad",
+  0,
+  0,
+  141766,
+  "NA",
+  ".cw",
+  "Guilder",
+  "599"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Christmas Island",
+  "Flying Fish Cove",
+  135,
+  52,
+  1500,
+  "AS",
+  ".cx",
+  "Dollar",
+  "61"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Cyprus",
+  "Nicosia",
+  9250,
+  3571,
+  1102677,
+  "EU",
+  ".cy",
+  "Euro",
+  "357"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Czech Republic",
+  "Prague",
+  78866,
+  30450,
+  10476000,
+  "EU",
+  ".cz",
+  "Koruna",
+  "420"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Germany",
+  "Berlin",
+  357021,
+  137845,
+  81802257,
+  "EU",
+  ".de",
+  "Euro",
+  "49"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Djibouti",
+  "Djibouti",
+  23000,
+  8880,
+  740528,
+  "AF",
+  ".dj",
+  "Franc",
+  "253"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Denmark",
+  "Copenhagen",
+  43094,
+  16638,
+  5484000,
+  "EU",
+  ".dk",
+  "Krone",
+  "45"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Dominica",
+  "Roseau",
+  754,
+  291,
+  72813,
+  "NA",
+  ".dm",
+  "Dollar",
+  "+1-767"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Dominican Republic",
+  "Santo Domingo",
+  48730,
+  18814,
+  9823821,
+  "NA",
+  ".do",
+  "Peso",
+  "+1-809 and 1-829"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Algeria",
+  "Algiers",
+  2381740,
+  919589,
+  34586184,
+  "AF",
+  ".dz",
+  "Dinar",
+  "213"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Ecuador",
+  "Quito",
+  283560,
+  109482,
+  14790608,
+  "SA",
+  ".ec",
+  "Dollar",
+  "593"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Estonia",
+  "Tallinn",
+  45226,
+  17461,
+  1291170,
+  "EU",
+  ".ee",
+  "Euro",
+  "372"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Egypt",
+  "Cairo",
+  1001450,
+  386659,
+  80471869,
+  "AF",
+  ".eg",
+  "Pound",
+  "20"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Western Sahara",
+  "El-Aaiun",
+  266000,
+  102702,
+  273008,
+  "AF",
+  ".eh",
+  "Dirham",
+  "212"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Eritrea",
+  "Asmara",
+  121320,
+  46841,
+  5792984,
+  "AF",
+  ".er",
+  "Nakfa",
+  "291"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Spain",
+  "Madrid",
+  504782,
+  194896,
+  46505963,
+  "EU",
+  ".es",
+  "Euro",
+  "34"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Ethiopia",
+  "Addis Ababa",
+  1127127,
+  435183,
+  88013491,
+  "AF",
+  ".et",
+  "Birr",
+  "251"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Finland",
+  "Helsinki",
+  337030,
+  130127,
+  5244000,
+  "EU",
+  ".fi",
+  "Euro",
+  "358"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Fiji",
+  "Suva",
+  18270,
+  7054,
+  875983,
+  "OC",
+  ".fj",
+  "Dollar",
+  "679"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Falkland Islands",
+  "Stanley",
+  12173,
+  4699,
+  2638,
+  "SA",
+  ".fk",
+  "Pound",
+  "500"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Micronesia",
+  "Palikir",
+  702,
+  271,
+  107708,
+  "OC",
+  ".fm",
+  "Dollar",
+  "691"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Faroe Islands",
+  "Torshavn",
+  1399,
+  540,
+  48228,
+  "EU",
+  ".fo",
+  "Krone",
+  "298"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "France",
+  "Paris",
+  547030,
+  211208,
+  64768389,
+  "EU",
+  ".fr",
+  "Euro",
+  "33"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Gabon",
+  "Libreville",
+  267667,
+  103346,
+  1545255,
+  "AF",
+  ".ga",
+  "Franc",
+  "241"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "United Kingdom",
+  "London",
+  244820,
+  94525,
+  62348447,
+  "EU",
+  ".uk",
+  "Pound",
+  "44"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Grenada",
+  "St. George's",
+  344,
+  132,
+  107818,
+  "NA",
+  ".gd",
+  "Dollar",
+  "+1-473"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Georgia",
+  "Tbilisi",
+  69700,
+  26911,
+  4630000,
+  "AS",
+  ".ge",
+  "Lari",
+  "995"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "French Guiana",
+  "Cayenne",
+  91000,
+  35135,
+  195506,
+  "SA",
+  ".gf",
+  "Euro",
+  "594"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Guernsey",
+  "St Peter Port",
+  78,
+  30,
+  65228,
+  "EU",
+  ".gg",
+  "Pound",
+  "+44-1481"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Ghana",
+  "Accra",
+  239460,
+  92455,
+  24339838,
+  "AF",
+  ".gh",
+  "Cedi",
+  "233"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Gibraltar",
+  "Gibraltar",
+  6,
+  2,
+  27884,
+  "EU",
+  ".gi",
+  "Pound",
+  "350"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Greenland",
+  "Nuuk",
+  2166086,
+  836325,
+  56375,
+  "NA",
+  ".gl",
+  "Krone",
+  "299"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Gambia",
+  "Banjul",
+  11300,
+  4362,
+  1593256,
+  "AF",
+  ".gm",
+  "Dalasi",
+  "220"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Guinea",
+  "Conakry",
+  245857,
+  94925,
+  10324025,
+  "AF",
+  ".gn",
+  "Franc",
+  "224"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Guadeloupe",
+  "Basse-Terre",
+  1780,
+  687,
+  443000,
+  "NA",
+  ".gp",
+  "Euro",
+  "590"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Equatorial Guinea",
+  "Malabo",
+  28051,
+  10830,
+  1014999,
+  "AF",
+  ".gq",
+  "Franc",
+  "240"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Greece",
+  "Athens",
+  131940,
+  50942,
+  11000000,
+  "EU",
+  ".gr",
+  "Euro",
+  "30"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "South Georgia and the South Sandwich Islands",
+  "Grytviken",
+  3903,
+  1506,
+  30,
+  "AN",
+  ".gs",
+  "Pound",
+  ""
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Guatemala",
+  "Guatemala City",
+  108890,
+  42042,
+  13550440,
+  "NA",
+  ".gt",
+  "Quetzal",
+  "502"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Guam",
+  "Hagatna",
+  549,
+  211,
+  159358,
+  "OC",
+  ".gu",
+  "Dollar",
+  "+1-671"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Guinea-Bissau",
+  "Bissau",
+  36120,
+  13945,
+  1565126,
+  "AF",
+  ".gw",
+  "Franc",
+  "245"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Guyana",
+  "Georgetown",
+  214970,
+  82999,
+  748486,
+  "SA",
+  ".gy",
+  "Dollar",
+  "592"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Hong Kong",
+  "Hong Kong",
+  1092,
+  421,
+  6898686,
+  "AS",
+  ".hk",
+  "Dollar",
+  "852"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Heard Island and McDonald Islands",
+  "",
+  412,
+  159,
+  0,
+  "AN",
+  ".hm",
+  "Dollar",
+  " "
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Honduras",
+  "Tegucigalpa",
+  112090,
+  43277,
+  7989415,
+  "NA",
+  ".hn",
+  "Lempira",
+  "504"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Croatia",
+  "Zagreb",
+  56542,
+  21830,
+  4491000,
+  "EU",
+  ".hr",
+  "Kuna",
+  "385"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Haiti",
+  "Port-au-Prince",
+  27750,
+  10714,
+  9648924,
+  "NA",
+  ".ht",
+  "Gourde",
+  "509"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Hungary",
+  "Budapest",
+  93030,
+  35918,
+  9930000,
+  "EU",
+  ".hu",
+  "Forint",
+  "36"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Indonesia",
+  "Jakarta",
+  1919440,
+  741095,
+  242968342,
+  "AS",
+  ".id",
+  "Rupiah",
+  "62"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Ireland",
+  "Dublin",
+  70280,
+  27135,
+  4622917,
+  "EU",
+  ".ie",
+  "Euro",
+  "353"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Israel",
+  "Jerusalem",
+  20770,
+  8019,
+  7353985,
+  "AS",
+  ".il",
+  "Shekel",
+  "972"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Isle of Man",
+  "Douglas, Isle of Man",
+  572,
+  220,
+  75049,
+  "EU",
+  ".im",
+  "Pound",
+  "+44-1624"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "India",
+  "New Delhi",
+  3287590,
+  1269338,
+  1173108018,
+  "AS",
+  ".in",
+  "Rupee",
+  "91"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "British Indian Ocean Territory",
+  "Diego Garcia",
+  60,
+  23,
+  4000,
+  "AS",
+  ".io",
+  "Dollar",
+  "246"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Iraq",
+  "Baghdad",
+  437072,
+  168753,
+  29671605,
+  "AS",
+  ".iq",
+  "Dinar",
+  "964"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Iran",
+  "Tehran",
+  1648000,
+  636292,
+  76923300,
+  "AS",
+  ".ir",
+  "Rial",
+  "98"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Iceland",
+  "Reykjavik",
+  103000,
+  39768,
+  308910,
+  "EU",
+  ".is",
+  "Krona",
+  "354"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Italy",
+  "Rome",
+  301230,
+  116304,
+  60340328,
+  "EU",
+  ".it",
+  "Euro",
+  "39"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Jersey",
+  "Saint Helier",
+  116,
+  44,
+  90812,
+  "EU",
+  ".je",
+  "Pound",
+  "+44-1534"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Jamaica",
+  "Kingston",
+  10991,
+  4243,
+  2847232,
+  "NA",
+  ".jm",
+  "Dollar",
+  "+1-876"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Jordan",
+  "Amman",
+  92300,
+  35637,
+  6407085,
+  "AS",
+  ".jo",
+  "Dinar",
+  "962"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Japan",
+  "Tokyo",
+  377835,
+  145882,
+  127288000,
+  "AS",
+  ".jp",
+  "Yen",
+  "81"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Kenya",
+  "Nairobi",
+  582650,
+  224961,
+  40046566,
+  "AF",
+  ".ke",
+  "Shilling",
+  "254"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Kyrgyzstan",
+  "Bishkek",
+  198500,
+  76640,
+  5508626,
+  "AS",
+  ".kg",
+  "Som",
+  "996"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Cambodia",
+  "Phnom Penh",
+  181040,
+  69899,
+  14453680,
+  "AS",
+  ".kh",
+  "Riels",
+  "855"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Kiribati",
+  "Tarawa",
+  811,
+  313,
+  92533,
+  "OC",
+  ".ki",
+  "Dollar",
+  "686"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Comoros",
+  "Moroni",
+  2170,
+  837,
+  773407,
+  "AF",
+  ".km",
+  "Franc",
+  "269"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Saint Kitts and Nevis",
+  "Basseterre",
+  261,
+  100,
+  49898,
+  "NA",
+  ".kn",
+  "Dollar",
+  "+1-869"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "North Korea",
+  "Pyongyang",
+  120540,
+  46540,
+  22912177,
+  "AS",
+  ".kp",
+  "Won",
+  "850"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "South Korea",
+  "Seoul",
+  98480,
+  38023,
+  48422644,
+  "AS",
+  ".kr",
+  "Won",
+  "82"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Kosovo",
+  "Pristina",
+  0,
+  0,
+  1800000,
+  "EU",
+  "",
+  "Euro",
+  ""
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Kuwait",
+  "Kuwait City",
+  17820,
+  6880,
+  2789132,
+  "AS",
+  ".kw",
+  "Dinar",
+  "965"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Cayman Islands",
+  "George Town",
+  262,
+  101,
+  44270,
+  "NA",
+  ".ky",
+  "Dollar",
+  "+1-345"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Kazakhstan",
+  "Astana",
+  2717300,
+  1049149,
+  15340000,
+  "AS",
+  ".kz",
+  "Tenge",
+  "7"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Laos",
+  "Vientiane",
+  236800,
+  91428,
+  6368162,
+  "AS",
+  ".la",
+  "Kip",
+  "856"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Lebanon",
+  "Beirut",
+  10400,
+  4015,
+  4125247,
+  "AS",
+  ".lb",
+  "Pound",
+  "961"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Saint Lucia",
+  "Castries",
+  616,
+  237,
+  160922,
+  "NA",
+  ".lc",
+  "Dollar",
+  "+1-758"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Liechtenstein",
+  "Vaduz",
+  160,
+  61,
+  35000,
+  "EU",
+  ".li",
+  "Franc",
+  "423"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Sri Lanka",
+  "Colombo",
+  65610,
+  25332,
+  21513990,
+  "AS",
+  ".lk",
+  "Rupee",
+  "94"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Liberia",
+  "Monrovia",
+  111370,
+  42999,
+  3685076,
+  "AF",
+  ".lr",
+  "Dollar",
+  "231"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Lesotho",
+  "Maseru",
+  30355,
+  11720,
+  1919552,
+  "AF",
+  ".ls",
+  "Loti",
+  "266"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Lithuania",
+  "Vilnius",
+  65200,
+  25173,
+  3565000,
+  "EU",
+  ".lt",
+  "Litas",
+  "370"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Luxembourg",
+  "Luxembourg",
+  2586,
+  998,
+  497538,
+  "EU",
+  ".lu",
+  "Euro",
+  "352"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Latvia",
+  "Riga",
+  64589,
+  24937,
+  2217969,
+  "EU",
+  ".lv",
+  "Lat",
+  "371"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Libya",
+  "Tripolis",
+  1759540,
+  679358,
+  6461454,
+  "AF",
+  ".ly",
+  "Dinar",
+  "218"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Morocco",
+  "Rabat",
+  446550,
+  172412,
+  31627428,
+  "AF",
+  ".ma",
+  "Dirham",
+  "212"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Monaco",
+  "Monaco",
+  1,
+  0,
+  32965,
+  "EU",
+  ".mc",
+  "Euro",
+  "377"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Moldova",
+  "Chisinau",
+  33843,
+  13066,
+  4324000,
+  "EU",
+  ".md",
+  "Leu",
+  "373"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Montenegro",
+  "Podgorica",
+  14026,
+  5415,
+  666730,
+  "EU",
+  ".me",
+  "Euro",
+  "382"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Saint Martin",
+  "Marigot",
+  53,
+  20,
+  35925,
+  "NA",
+  ".gp",
+  "Euro",
+  "590"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Madagascar",
+  "Antananarivo",
+  587040,
+  226656,
+  21281844,
+  "AF",
+  ".mg",
+  "Ariary",
+  "261"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Marshall Islands",
+  "Majuro",
+  181,
+  69,
+  65859,
+  "OC",
+  ".mh",
+  "Dollar",
+  "692"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Macedonia",
+  "Skopje",
+  25333,
+  9781,
+  2061000,
+  "EU",
+  ".mk",
+  "Denar",
+  "389"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Mali",
+  "Bamako",
+  1240000,
+  478764,
+  13796354,
+  "AF",
+  ".ml",
+  "Franc",
+  "223"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Myanmar",
+  "Nay Pyi Taw",
+  678500,
+  261968,
+  53414374,
+  "AS",
+  ".mm",
+  "Kyat",
+  "95"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Mongolia",
+  "Ulan Bator",
+  1565000,
+  604246,
+  3086918,
+  "AS",
+  ".mn",
+  "Tugrik",
+  "976"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Macao",
+  "Macao",
+  254,
+  98,
+  449198,
+  "AS",
+  ".mo",
+  "Pataca",
+  "853"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Northern Mariana Islands",
+  "Saipan",
+  477,
+  184,
+  53883,
+  "OC",
+  ".mp",
+  "Dollar",
+  "+1-670"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Martinique",
+  "Fort-de-France",
+  1100,
+  424,
+  432900,
+  "NA",
+  ".mq",
+  "Euro",
+  "596"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Mauritania",
+  "Nouakchott",
+  1030700,
+  397953,
+  3205060,
+  "AF",
+  ".mr",
+  "Ouguiya",
+  "222"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Montserrat",
+  "Plymouth",
+  102,
+  39,
+  9341,
+  "NA",
+  ".ms",
+  "Dollar",
+  "+1-664"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Malta",
+  "Valletta",
+  316,
+  122,
+  403000,
+  "EU",
+  ".mt",
+  "Euro",
+  "356"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Mauritius",
+  "Port Louis",
+  2040,
+  787,
+  1294104,
+  "AF",
+  ".mu",
+  "Rupee",
+  "230"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Maldives",
+  "Male",
+  300,
+  115,
+  395650,
+  "AS",
+  ".mv",
+  "Rufiyaa",
+  "960"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Malawi",
+  "Lilongwe",
+  118480,
+  45745,
+  15447500,
+  "AF",
+  ".mw",
+  "Kwacha",
+  "265"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Mexico",
+  "Mexico City",
+  1972550,
+  761601,
+  112468855,
+  "NA",
+  ".mx",
+  "Peso",
+  "52"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Malaysia",
+  "Kuala Lumpur",
+  329750,
+  127316,
+  28274729,
+  "AS",
+  ".my",
+  "Ringgit",
+  "60"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Mozambique",
+  "Maputo",
+  801590,
+  309493,
+  22061451,
+  "AF",
+  ".mz",
+  "Metical",
+  "258"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Namibia",
+  "Windhoek",
+  825418,
+  318693,
+  2128471,
+  "AF",
+  ".na",
+  "Dollar",
+  "264"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "New Caledonia",
+  "Noumea",
+  19060,
+  7359,
+  216494,
+  "OC",
+  ".nc",
+  "Franc",
+  "687"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Niger",
+  "Niamey",
+  1267000,
+  489188,
+  15878271,
+  "AF",
+  ".ne",
+  "Franc",
+  "227"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Norfolk Island",
+  "Kingston",
+  34,
+  13,
+  1828,
+  "OC",
+  ".nf",
+  "Dollar",
+  "672"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Nigeria",
+  "Abuja",
+  923768,
+  356666,
+  154000000,
+  "AF",
+  ".ng",
+  "Naira",
+  "234"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Nicaragua",
+  "Managua",
+  129494,
+  49997,
+  5995928,
+  "NA",
+  ".ni",
+  "Cordoba",
+  "505"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Netherlands",
+  "Amsterdam",
+  41526,
+  16033,
+  16645000,
+  "EU",
+  ".nl",
+  "Euro",
+  "31"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Norway",
+  "Oslo",
+  324220,
+  125181,
+  4985870,
+  "EU",
+  ".no",
+  "Krone",
+  "47"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Nepal",
+  "Kathmandu",
+  140800,
+  54362,
+  28951852,
+  "AS",
+  ".np",
+  "Rupee",
+  "977"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Nauru",
+  "Yaren",
+  21,
+  8,
+  10065,
+  "OC",
+  ".nr",
+  "Dollar",
+  "674"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Niue",
+  "Alofi",
+  260,
+  100,
+  2166,
+  "OC",
+  ".nu",
+  "Dollar",
+  "683"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "New Zealand",
+  "Wellington",
+  268680,
+  103737,
+  4252277,
+  "OC",
+  ".nz",
+  "Dollar",
+  "64"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Oman",
+  "Muscat",
+  212460,
+  82030,
+  2967717,
+  "AS",
+  ".om",
+  "Rial",
+  "968"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Panama",
+  "Panama City",
+  78200,
+  30193,
+  3410676,
+  "NA",
+  ".pa",
+  "Balboa",
+  "507"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Peru",
+  "Lima",
+  1285220,
+  496223,
+  29907003,
+  "SA",
+  ".pe",
+  "Sol",
+  "51"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "French Polynesia",
+  "Papeete",
+  4167,
+  1608,
+  270485,
+  "OC",
+  ".pf",
+  "Franc",
+  "689"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Papua New Guinea",
+  "Port Moresby",
+  462840,
+  178702,
+  6064515,
+  "OC",
+  ".pg",
+  "Kina",
+  "675"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Philippines",
+  "Manila",
+  300000,
+  115830,
+  99900177,
+  "AS",
+  ".ph",
+  "Peso",
+  "63"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Pakistan",
+  "Islamabad",
+  803940,
+  310401,
+  184404791,
+  "AS",
+  ".pk",
+  "Rupee",
+  "92"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Poland",
+  "Warsaw",
+  312685,
+  120727,
+  38500000,
+  "EU",
+  ".pl",
+  "Zloty",
+  "48"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Saint Pierre and Miquelon",
+  "Saint-Pierre",
+  242,
+  93,
+  7012,
+  "NA",
+  ".pm",
+  "Euro",
+  "508"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Pitcairn",
+  "Adamstown",
+  47,
+  18,
+  46,
+  "OC",
+  ".pn",
+  "Dollar",
+  "870"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Puerto Rico",
+  "San Juan",
+  9104,
+  3515,
+  3916632,
+  "NA",
+  ".pr",
+  "Dollar",
+  "+1-787 and 1-939"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Palestinian Territory",
+  "East Jerusalem",
+  5970,
+  2305,
+  3800000,
+  "AS",
+  ".ps",
+  "Shekel",
+  "970"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Portugal",
+  "Lisbon",
+  92391,
+  35672,
+  10676000,
+  "EU",
+  ".pt",
+  "Euro",
+  "351"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Palau",
+  "Melekeok",
+  458,
+  176,
+  19907,
+  "OC",
+  ".pw",
+  "Dollar",
+  "680"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Paraguay",
+  "Asuncion",
+  406750,
+  157046,
+  6375830,
+  "SA",
+  ".py",
+  "Guarani",
+  "595"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Qatar",
+  "Doha",
+  11437,
+  4415,
+  840926,
+  "AS",
+  ".qa",
+  "Rial",
+  "974"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Reunion",
+  "Saint-Denis",
+  2517,
+  971,
+  776948,
+  "AF",
+  ".re",
+  "Euro",
+  "262"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Romania",
+  "Bucharest",
+  237500,
+  91698,
+  21959278,
+  "EU",
+  ".ro",
+  "Leu",
+  "40"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Serbia",
+  "Belgrade",
+  88361,
+  34116,
+  7344847,
+  "EU",
+  ".rs",
+  "Dinar",
+  "381"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Russia",
+  "Moscow",
+  17100000,
+  6602310,
+  140702000,
+  "EU",
+  ".ru",
+  "Ruble",
+  "7"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Rwanda",
+  "Kigali",
+  26338,
+  10169,
+  11055976,
+  "AF",
+  ".rw",
+  "Franc",
+  "250"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Saudi Arabia",
+  "Riyadh",
+  1960582,
+  756980,
+  25731776,
+  "AS",
+  ".sa",
+  "Rial",
+  "966"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Solomon Islands",
+  "Honiara",
+  28450,
+  10984,
+  559198,
+  "OC",
+  ".sb",
+  "Dollar",
+  "677"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Seychelles",
+  "Victoria",
+  455,
+  175,
+  88340,
+  "AF",
+  ".sc",
+  "Rupee",
+  "248"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Sudan",
+  "Khartoum",
+  1861484,
+  718718,
+  35000000,
+  "AF",
+  ".sd",
+  "Pound",
+  "249"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "South Sudan",
+  "Juba",
+  644329,
+  248775,
+  8260490,
+  "AF",
+  "",
+  "Pound",
+  "211"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Sweden",
+  "Stockholm",
+  449964,
+  173731,
+  9045000,
+  "EU",
+  ".se",
+  "Krona",
+  "46"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Singapore",
+  "Singapur",
+  692,
+  267,
+  4701069,
+  "AS",
+  ".sg",
+  "Dollar",
+  "65"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Saint Helena",
+  "Jamestown",
+  410,
+  158,
+  7460,
+  "AF",
+  ".sh",
+  "Pound",
+  "290"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Slovenia",
+  "Ljubljana",
+  20273,
+  7827,
+  2007000,
+  "EU",
+  ".si",
+  "Euro",
+  "386"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Svalbard and Jan Mayen",
+  "Longyearbyen",
+  62049,
+  23957,
+  2550,
+  "EU",
+  ".sj",
+  "Krone",
+  "47"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Slovakia",
+  "Bratislava",
+  48845,
+  18859,
+  5455000,
+  "EU",
+  ".sk",
+  "Euro",
+  "421"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Sierra Leone",
+  "Freetown",
+  71740,
+  27698,
+  5245695,
+  "AF",
+  ".sl",
+  "Leone",
+  "232"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "San Marino",
+  "San Marino",
+  61,
+  23,
+  31477,
+  "EU",
+  ".sm",
+  "Euro",
+  "378"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Senegal",
+  "Dakar",
+  196190,
+  75748,
+  12323252,
+  "AF",
+  ".sn",
+  "Franc",
+  "221"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Somalia",
+  "Mogadishu",
+  637657,
+  246199,
+  10112453,
+  "AF",
+  ".so",
+  "Shilling",
+  "252"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Suriname",
+  "Paramaribo",
+  163270,
+  63038,
+  492829,
+  "SA",
+  ".sr",
+  "Dollar",
+  "597"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Sao Tome and Principe",
+  "Sao Tome",
+  1001,
+  386,
+  175808,
+  "AF",
+  ".st",
+  "Dobra",
+  "239"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "El Salvador",
+  "San Salvador",
+  21040,
+  8123,
+  6052064,
+  "NA",
+  ".sv",
+  "Dollar",
+  "503"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Sint Maarten",
+  "Philipsburg",
+  0,
+  0,
+  37429,
+  "NA",
+  ".sx",
+  "Guilder",
+  "599"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Syria",
+  "Damascus",
+  185180,
+  71497,
+  22198110,
+  "AS",
+  ".sy",
+  "Pound",
+  "963"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Swaziland",
+  "Mbabane",
+  17363,
+  6703,
+  1354051,
+  "AF",
+  ".sz",
+  "Lilangeni",
+  "268"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Turks and Caicos Islands",
+  "Cockburn Town",
+  430,
+  166,
+  20556,
+  "NA",
+  ".tc",
+  "Dollar",
+  "+1-649"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Chad",
+  "N'Djamena",
+  1284000,
+  495752,
+  10543464,
+  "AF",
+  ".td",
+  "Franc",
+  "235"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "French Southern Territories",
+  "Port-aux-Francais",
+  7829,
+  3022,
+  140,
+  "AN",
+  ".tf",
+  "Euro  ",
+  ""
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Togo",
+  "Lome",
+  56785,
+  21924,
+  6587239,
+  "AF",
+  ".tg",
+  "Franc",
+  "228"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Thailand",
+  "Bangkok",
+  514000,
+  198455,
+  67089500,
+  "AS",
+  ".th",
+  "Baht",
+  "66"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Tajikistan",
+  "Dushanbe",
+  143100,
+  55250,
+  7487489,
+  "AS",
+  ".tj",
+  "Somoni",
+  "992"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Tokelau",
+  "",
+  10,
+  3,
+  1466,
+  "OC",
+  ".tk",
+  "Dollar",
+  "690"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "East Timor",
+  "Dili",
+  15007,
+  5794,
+  1154625,
+  "OC",
+  ".tl",
+  "Dollar",
+  "670"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Turkmenistan",
+  "Ashgabat",
+  488100,
+  188455,
+  4940916,
+  "AS",
+  ".tm",
+  "Manat",
+  "993"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Tunisia",
+  "Tunis",
+  163610,
+  63169,
+  10589025,
+  "AF",
+  ".tn",
+  "Dinar",
+  "216"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Tonga",
+  "Nuku'alofa",
+  748,
+  288,
+  122580,
+  "OC",
+  ".to",
+  "Pa'anga",
+  "676"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Turkey",
+  "Ankara",
+  780580,
+  301381,
+  77804122,
+  "AS",
+  ".tr",
+  "Lira",
+  "90"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Trinidad and Tobago",
+  "Port of Spain",
+  5128,
+  1979,
+  1228691,
+  "NA",
+  ".tt",
+  "Dollar",
+  "+1-868"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Tuvalu",
+  "Funafuti",
+  26,
+  10,
+  10472,
+  "OC",
+  ".tv",
+  "Dollar",
+  "688"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Taiwan",
+  "Taipei",
+  35980,
+  13891,
+  22894384,
+  "AS",
+  ".tw",
+  "Dollar",
+  "886"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Tanzania",
+  "Dodoma",
+  945087,
+  364898,
+  41892895,
+  "AF",
+  ".tz",
+  "Shilling",
+  "255"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Ukraine",
+  "Kiev",
+  603700,
+  233088,
+  45415596,
+  "EU",
+  ".ua",
+  "Hryvnia",
+  "380"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Uganda",
+  "Kampala",
+  236040,
+  91135,
+  33398682,
+  "AF",
+  ".ug",
+  "Shilling",
+  "256"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "United States Minor Outlying Islands",
+  "",
+  0,
+  0,
+  0,
+  "OC",
+  ".um",
+  "Dollar ",
+  "1"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "United States",
+  "Washington D.C.",
+  9629091,
+  3717792,
+  310232863,
+  "NA",
+  ".us",
+  "Dollar",
+  "1"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Uruguay",
+  "Montevideo",
+  176220,
+  68038,
+  3477000,
+  "SA",
+  ".uy",
+  "Peso",
+  "598"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Uzbekistan",
+  "Tashkent",
+  447400,
+  172741,
+  27865738,
+  "AS",
+  ".uz",
+  "Som",
+  "998"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Vatican",
+  "Vatican City",
+  0,
+  0,
+  921,
+  "EU",
+  ".va",
+  "Euro",
+  "379"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Saint Vincent and the Grenadines",
+  "Kingstown",
+  389,
+  150,
+  104217,
+  "NA",
+  ".vc",
+  "Dollar",
+  "+1-784"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Venezuela",
+  "Caracas",
+  912050,
+  352142,
+  27223228,
+  "SA",
+  ".ve",
+  "Bolivar",
+  "58"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "British Virgin Islands",
+  "Road Town",
+  153,
+  59,
+  21730,
+  "NA",
+  ".vg",
+  "Dollar",
+  "+1-284"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "U.S. Virgin Islands",
+  "Charlotte Amalie",
+  352,
+  135,
+  108708,
+  "NA",
+  ".vi",
+  "Dollar",
+  "+1-340"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Vietnam",
+  "Hanoi",
+  329560,
+  127243,
+  89571130,
+  "AS",
+  ".vn",
+  "Dong",
+  "84"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Vanuatu",
+  "Port Vila",
+  12200,
+  4710,
+  221552,
+  "OC",
+  ".vu",
+  "Vatu",
+  "678"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Wallis and Futuna",
+  "Mata Utu",
+  274,
+  105,
+  16025,
+  "OC",
+  ".wf",
+  "Franc",
+  "681"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Samoa",
+  "Apia",
+  2944,
+  1136,
+  192001,
+  "OC",
+  ".ws",
+  "Tala",
+  "685"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Yemen",
+  "Sanaa",
+  527970,
+  203849,
+  23495361,
+  "AS",
+  ".ye",
+  "Rial",
+  "967"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Mayotte",
+  "Mamoudzou",
+  374,
+  144,
+  159042,
+  "AF",
+  ".yt",
+  "Euro",
+  "262"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "South Africa",
+  "Pretoria",
+  1219912,
+  471008,
+  49000000,
+  "AF",
+  ".za",
+  "Rand",
+  "27"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Zambia",
+  "Lusaka",
+  752614,
+  290584,
+  13460305,
+  "AF",
+  ".zm",
+  "Kwacha",
+  "260"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Zimbabwe",
+  "Harare",
+  390580,
+  150802,
+  11651858,
+  "AF",
+  ".zw",
+  "Dollar",
+  "263"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Serbia and Montenegro",
+  "Belgrade",
+  102350,
+  39517,
+  10829175,
+  "EU",
+  ".cs",
+  "Dinar",
+  "381"
+);
+INSERT INTO country
+(
+    country_name,
+    capital,
+    area_sqkm,
+    area_sqmi,
+    population,
+    continent,
+    tld,
+    currency,
+    phone
+)
+VALUES
+(
+  "Netherlands Antilles",
+  "Willemstad",
+  960,
+  370,
+  136197,
+  "NA",
+  ".an",
+  "Guilder",
+  "599"
+);

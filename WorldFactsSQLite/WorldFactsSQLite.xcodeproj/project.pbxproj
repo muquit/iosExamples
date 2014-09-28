@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6219942219B27BA50045FEA6 /* MQTCountryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6219942119B27BA50045FEA6 /* MQTCountryTableViewController.m */; };
+		6219942519B27BFD0045FEA6 /* MQTCountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6219942419B27BFD0045FEA6 /* MQTCountryViewController.m */; };
+		62938BAE19B50F260060ED0D /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 62938BAD19B50F260060ED0D /* README.txt */; };
+		62938BB119B540690060ED0D /* MQTAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62938BB019B540690060ED0D /* MQTAboutViewController.m */; };
+		62938BB419B549D20060ED0D /* MQTCountryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62938BB319B549D20060ED0D /* MQTCountryTableViewCell.m */; };
+		629EFD1219B277FC006CB05E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629EFD1119B277FC006CB05E /* Foundation.framework */; };
+		629EFD1419B277FC006CB05E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629EFD1319B277FC006CB05E /* CoreGraphics.framework */; };
+		629EFD1619B277FC006CB05E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629EFD1519B277FC006CB05E /* UIKit.framework */; };
+		629EFD1C19B277FC006CB05E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 629EFD1A19B277FC006CB05E /* InfoPlist.strings */; };
+		629EFD1E19B277FC006CB05E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 629EFD1D19B277FC006CB05E /* main.m */; };
+		629EFD2219B277FC006CB05E /* MQTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 629EFD2119B277FC006CB05E /* MQTAppDelegate.m */; };
+		629EFD2519B277FC006CB05E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629EFD2319B277FC006CB05E /* Main.storyboard */; };
+		629EFD2819B277FC006CB05E /* MQTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 629EFD2719B277FC006CB05E /* MQTViewController.m */; };
+		629EFD2A19B277FC006CB05E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 629EFD2919B277FC006CB05E /* Images.xcassets */; };
+		629EFD3119B277FC006CB05E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629EFD3019B277FC006CB05E /* XCTest.framework */; };
+		629EFD3219B277FC006CB05E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629EFD1119B277FC006CB05E /* Foundation.framework */; };
+		629EFD3319B277FC006CB05E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629EFD1519B277FC006CB05E /* UIKit.framework */; };
+		629EFD3B19B277FC006CB05E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 629EFD3919B277FC006CB05E /* InfoPlist.strings */; };
+		629EFD3D19B277FC006CB05E /* WorldFactsSQLiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 629EFD3C19B277FC006CB05E /* WorldFactsSQLiteTests.m */; };
+		62EB55E619B284060056FCFB /* countries.sql in Resources */ = {isa = PBXBuildFile; fileRef = 62EB55E419B284060056FCFB /* countries.sql */; };
+		62EB55E719B284060056FCFB /* countries.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 62EB55E519B284060056FCFB /* countries.sqlite */; };
+		62EB55EA19B284230056FCFB /* plist2sql.rb in Resources */ = {isa = PBXBuildFile; fileRef = 62EB55E819B284230056FCFB /* plist2sql.rb */; };
+		62EB55EB19B284230056FCFB /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 62EB55E919B284230056FCFB /* README.txt */; };
+		62EB55EE19B284650056FCFB /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EB55ED19B284650056FCFB /* Country.m */; };
+		62EB55F219B3868B0056FCFB /* CountriesDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EB55F119B3868B0056FCFB /* CountriesDatabase.m */; };
+		62EB55F419B38C9B0056FCFB /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EB55F319B38C9B0056FCFB /* libsqlite3.dylib */; };
+		BF424196A8594B3B9C766BDB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3B890F4D6B4349BE1811E0 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		629EFD3419B277FC006CB05E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 629EFD0619B277FC006CB05E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 629EFD0D19B277FC006CB05E;
+			remoteInfo = WorldFactsSQLite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E3B890F4D6B4349BE1811E0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6219942019B27BA50045FEA6 /* MQTCountryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTCountryTableViewController.h; sourceTree = "<group>"; };
+		6219942119B27BA50045FEA6 /* MQTCountryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTCountryTableViewController.m; sourceTree = "<group>"; };
+		6219942319B27BFD0045FEA6 /* MQTCountryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTCountryViewController.h; sourceTree = "<group>"; };
+		6219942419B27BFD0045FEA6 /* MQTCountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTCountryViewController.m; sourceTree = "<group>"; };
+		62938BAD19B50F260060ED0D /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		62938BAF19B540690060ED0D /* MQTAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTAboutViewController.h; sourceTree = "<group>"; };
+		62938BB019B540690060ED0D /* MQTAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTAboutViewController.m; sourceTree = "<group>"; };
+		62938BB219B549D20060ED0D /* MQTCountryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTCountryTableViewCell.h; sourceTree = "<group>"; };
+		62938BB319B549D20060ED0D /* MQTCountryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTCountryTableViewCell.m; sourceTree = "<group>"; };
+		629EFD0E19B277FC006CB05E /* WorldFactsSQLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldFactsSQLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		629EFD1119B277FC006CB05E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		629EFD1319B277FC006CB05E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		629EFD1519B277FC006CB05E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		629EFD1919B277FC006CB05E /* WorldFactsSQLite-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WorldFactsSQLite-Info.plist"; sourceTree = "<group>"; };
+		629EFD1B19B277FC006CB05E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		629EFD1D19B277FC006CB05E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		629EFD1F19B277FC006CB05E /* WorldFactsSQLite-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WorldFactsSQLite-Prefix.pch"; sourceTree = "<group>"; };
+		629EFD2019B277FC006CB05E /* MQTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MQTAppDelegate.h; sourceTree = "<group>"; };
+		629EFD2119B277FC006CB05E /* MQTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQTAppDelegate.m; sourceTree = "<group>"; };
+		629EFD2419B277FC006CB05E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		629EFD2619B277FC006CB05E /* MQTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MQTViewController.h; sourceTree = "<group>"; };
+		629EFD2719B277FC006CB05E /* MQTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQTViewController.m; sourceTree = "<group>"; };
+		629EFD2919B277FC006CB05E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		629EFD2F19B277FC006CB05E /* WorldFactsSQLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorldFactsSQLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		629EFD3019B277FC006CB05E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		629EFD3819B277FC006CB05E /* WorldFactsSQLiteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WorldFactsSQLiteTests-Info.plist"; sourceTree = "<group>"; };
+		629EFD3A19B277FC006CB05E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		629EFD3C19B277FC006CB05E /* WorldFactsSQLiteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorldFactsSQLiteTests.m; sourceTree = "<group>"; };
+		62EB55E419B284060056FCFB /* countries.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = countries.sql; sourceTree = "<group>"; };
+		62EB55E519B284060056FCFB /* countries.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = countries.sqlite; sourceTree = "<group>"; };
+		62EB55E819B284230056FCFB /* plist2sql.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = plist2sql.rb; sourceTree = "<group>"; };
+		62EB55E919B284230056FCFB /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		62EB55EC19B284650056FCFB /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
+		62EB55ED19B284650056FCFB /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
+		62EB55F019B3868B0056FCFB /* CountriesDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountriesDatabase.h; sourceTree = "<group>"; };
+		62EB55F119B3868B0056FCFB /* CountriesDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountriesDatabase.m; sourceTree = "<group>"; };
+		62EB55F319B38C9B0056FCFB /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		9A7FBDC4346B48A992D3713F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		629EFD0B19B277FC006CB05E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62EB55F419B38C9B0056FCFB /* libsqlite3.dylib in Frameworks */,
+				629EFD1419B277FC006CB05E /* CoreGraphics.framework in Frameworks */,
+				629EFD1619B277FC006CB05E /* UIKit.framework in Frameworks */,
+				629EFD1219B277FC006CB05E /* Foundation.framework in Frameworks */,
+				BF424196A8594B3B9C766BDB /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629EFD2C19B277FC006CB05E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629EFD3119B277FC006CB05E /* XCTest.framework in Frameworks */,
+				629EFD3319B277FC006CB05E /* UIKit.framework in Frameworks */,
+				629EFD3219B277FC006CB05E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6219941D19B2786C0045FEA6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				629EFD2319B277FC006CB05E /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		6219941E19B2787C0045FEA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				62EB55EC19B284650056FCFB /* Country.h */,
+				62EB55ED19B284650056FCFB /* Country.m */,
+				62EB55F119B3868B0056FCFB /* CountriesDatabase.m */,
+				62EB55F019B3868B0056FCFB /* CountriesDatabase.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6219941F19B278920045FEA6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				629EFD2619B277FC006CB05E /* MQTViewController.h */,
+				629EFD2719B277FC006CB05E /* MQTViewController.m */,
+				6219942019B27BA50045FEA6 /* MQTCountryTableViewController.h */,
+				6219942119B27BA50045FEA6 /* MQTCountryTableViewController.m */,
+				6219942319B27BFD0045FEA6 /* MQTCountryViewController.h */,
+				6219942419B27BFD0045FEA6 /* MQTCountryViewController.m */,
+				62938BAF19B540690060ED0D /* MQTAboutViewController.h */,
+				62938BB019B540690060ED0D /* MQTAboutViewController.m */,
+				62938BB219B549D20060ED0D /* MQTCountryTableViewCell.h */,
+				62938BB319B549D20060ED0D /* MQTCountryTableViewCell.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		629EFD0519B277FC006CB05E = {
+			isa = PBXGroup;
+			children = (
+				62938BAD19B50F260060ED0D /* README.txt */,
+				629EFD1719B277FC006CB05E /* WorldFactsSQLite */,
+				629EFD3619B277FC006CB05E /* WorldFactsSQLiteTests */,
+				629EFD1019B277FC006CB05E /* Frameworks */,
+				629EFD0F19B277FC006CB05E /* Products */,
+				9A7FBDC4346B48A992D3713F /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		629EFD0F19B277FC006CB05E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				629EFD0E19B277FC006CB05E /* WorldFactsSQLite.app */,
+				629EFD2F19B277FC006CB05E /* WorldFactsSQLiteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		629EFD1019B277FC006CB05E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62EB55F319B38C9B0056FCFB /* libsqlite3.dylib */,
+				629EFD1119B277FC006CB05E /* Foundation.framework */,
+				629EFD1319B277FC006CB05E /* CoreGraphics.framework */,
+				629EFD1519B277FC006CB05E /* UIKit.framework */,
+				629EFD3019B277FC006CB05E /* XCTest.framework */,
+				4E3B890F4D6B4349BE1811E0 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		629EFD1719B277FC006CB05E /* WorldFactsSQLite */ = {
+			isa = PBXGroup;
+			children = (
+				629EFD2019B277FC006CB05E /* MQTAppDelegate.h */,
+				629EFD2119B277FC006CB05E /* MQTAppDelegate.m */,
+				6219941E19B2787C0045FEA6 /* Model */,
+				6219941D19B2786C0045FEA6 /* Views */,
+				6219941F19B278920045FEA6 /* Controllers */,
+				629EFD2919B277FC006CB05E /* Images.xcassets */,
+				629EFD1819B277FC006CB05E /* Supporting Files */,
+			);
+			path = WorldFactsSQLite;
+			sourceTree = "<group>";
+		};
+		629EFD1819B277FC006CB05E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				62EB55E819B284230056FCFB /* plist2sql.rb */,
+				62EB55E919B284230056FCFB /* README.txt */,
+				62EB55E419B284060056FCFB /* countries.sql */,
+				62EB55E519B284060056FCFB /* countries.sqlite */,
+				629EFD1919B277FC006CB05E /* WorldFactsSQLite-Info.plist */,
+				629EFD1A19B277FC006CB05E /* InfoPlist.strings */,
+				629EFD1D19B277FC006CB05E /* main.m */,
+				629EFD1F19B277FC006CB05E /* WorldFactsSQLite-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		629EFD3619B277FC006CB05E /* WorldFactsSQLiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				629EFD3C19B277FC006CB05E /* WorldFactsSQLiteTests.m */,
+				629EFD3719B277FC006CB05E /* Supporting Files */,
+			);
+			path = WorldFactsSQLiteTests;
+			sourceTree = "<group>";
+		};
+		629EFD3719B277FC006CB05E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				629EFD3819B277FC006CB05E /* WorldFactsSQLiteTests-Info.plist */,
+				629EFD3919B277FC006CB05E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		629EFD0D19B277FC006CB05E /* WorldFactsSQLite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629EFD4019B277FC006CB05E /* Build configuration list for PBXNativeTarget "WorldFactsSQLite" */;
+			buildPhases = (
+				A8BB853F184B47D983D5DD09 /* Check Pods Manifest.lock */,
+				629EFD0A19B277FC006CB05E /* Sources */,
+				629EFD0B19B277FC006CB05E /* Frameworks */,
+				629EFD0C19B277FC006CB05E /* Resources */,
+				AC1FBDC8A81449D989E0A2FA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WorldFactsSQLite;
+			productName = WorldFactsSQLite;
+			productReference = 629EFD0E19B277FC006CB05E /* WorldFactsSQLite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		629EFD2E19B277FC006CB05E /* WorldFactsSQLiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 629EFD4319B277FC006CB05E /* Build configuration list for PBXNativeTarget "WorldFactsSQLiteTests" */;
+			buildPhases = (
+				629EFD2B19B277FC006CB05E /* Sources */,
+				629EFD2C19B277FC006CB05E /* Frameworks */,
+				629EFD2D19B277FC006CB05E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				629EFD3519B277FC006CB05E /* PBXTargetDependency */,
+			);
+			name = WorldFactsSQLiteTests;
+			productName = WorldFactsSQLiteTests;
+			productReference = 629EFD2F19B277FC006CB05E /* WorldFactsSQLiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		629EFD0619B277FC006CB05E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MQT;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = muquit.com;
+				TargetAttributes = {
+					629EFD0D19B277FC006CB05E = {
+						DevelopmentTeam = P2MXU33ESG;
+					};
+					629EFD2E19B277FC006CB05E = {
+						TestTargetID = 629EFD0D19B277FC006CB05E;
+					};
+				};
+			};
+			buildConfigurationList = 629EFD0919B277FC006CB05E /* Build configuration list for PBXProject "WorldFactsSQLite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 629EFD0519B277FC006CB05E;
+			productRefGroup = 629EFD0F19B277FC006CB05E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				629EFD0D19B277FC006CB05E /* WorldFactsSQLite */,
+				629EFD2E19B277FC006CB05E /* WorldFactsSQLiteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		629EFD0C19B277FC006CB05E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629EFD2A19B277FC006CB05E /* Images.xcassets in Resources */,
+				62EB55E719B284060056FCFB /* countries.sqlite in Resources */,
+				62EB55EA19B284230056FCFB /* plist2sql.rb in Resources */,
+				629EFD1C19B277FC006CB05E /* InfoPlist.strings in Resources */,
+				629EFD2519B277FC006CB05E /* Main.storyboard in Resources */,
+				62EB55EB19B284230056FCFB /* README.txt in Resources */,
+				62938BAE19B50F260060ED0D /* README.txt in Resources */,
+				62EB55E619B284060056FCFB /* countries.sql in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629EFD2D19B277FC006CB05E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629EFD3B19B277FC006CB05E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8BB853F184B47D983D5DD09 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC1FBDC8A81449D989E0A2FA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		629EFD0A19B277FC006CB05E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62938BB419B549D20060ED0D /* MQTCountryTableViewCell.m in Sources */,
+				629EFD1E19B277FC006CB05E /* main.m in Sources */,
+				629EFD2219B277FC006CB05E /* MQTAppDelegate.m in Sources */,
+				629EFD2819B277FC006CB05E /* MQTViewController.m in Sources */,
+				6219942519B27BFD0045FEA6 /* MQTCountryViewController.m in Sources */,
+				62EB55EE19B284650056FCFB /* Country.m in Sources */,
+				62EB55F219B3868B0056FCFB /* CountriesDatabase.m in Sources */,
+				6219942219B27BA50045FEA6 /* MQTCountryTableViewController.m in Sources */,
+				62938BB119B540690060ED0D /* MQTAboutViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		629EFD2B19B277FC006CB05E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				629EFD3D19B277FC006CB05E /* WorldFactsSQLiteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		629EFD3519B277FC006CB05E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 629EFD0D19B277FC006CB05E /* WorldFactsSQLite */;
+			targetProxy = 629EFD3419B277FC006CB05E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		629EFD1A19B277FC006CB05E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629EFD1B19B277FC006CB05E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		629EFD2319B277FC006CB05E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629EFD2419B277FC006CB05E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		629EFD3919B277FC006CB05E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				629EFD3A19B277FC006CB05E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		629EFD3E19B277FC006CB05E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		629EFD3F19B277FC006CB05E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		629EFD4119B277FC006CB05E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A7FBDC4346B48A992D3713F /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WorldFactsSQLite/WorldFactsSQLite-Prefix.pch";
+				INFOPLIST_FILE = "WorldFactsSQLite/WorldFactsSQLite-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		629EFD4219B277FC006CB05E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A7FBDC4346B48A992D3713F /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WorldFactsSQLite/WorldFactsSQLite-Prefix.pch";
+				INFOPLIST_FILE = "WorldFactsSQLite/WorldFactsSQLite-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		629EFD4419B277FC006CB05E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WorldFactsSQLite.app/WorldFactsSQLite";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WorldFactsSQLite/WorldFactsSQLite-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WorldFactsSQLiteTests/WorldFactsSQLiteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		629EFD4519B277FC006CB05E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WorldFactsSQLite.app/WorldFactsSQLite";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WorldFactsSQLite/WorldFactsSQLite-Prefix.pch";
+				INFOPLIST_FILE = "WorldFactsSQLiteTests/WorldFactsSQLiteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		629EFD0919B277FC006CB05E /* Build configuration list for PBXProject "WorldFactsSQLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629EFD3E19B277FC006CB05E /* Debug */,
+				629EFD3F19B277FC006CB05E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629EFD4019B277FC006CB05E /* Build configuration list for PBXNativeTarget "WorldFactsSQLite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629EFD4119B277FC006CB05E /* Debug */,
+				629EFD4219B277FC006CB05E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		629EFD4319B277FC006CB05E /* Build configuration list for PBXNativeTarget "WorldFactsSQLiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				629EFD4419B277FC006CB05E /* Debug */,
+				629EFD4519B277FC006CB05E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 629EFD0619B277FC006CB05E /* Project object */;
+}
