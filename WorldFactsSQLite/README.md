@@ -12,7 +12,7 @@ From this app you can learn:
 
 * UITableView with dynamic sections and indexes. Look at [MQTCountryTableViewController.m](WorldFactsSQLite/MQTCountryTableViewController.m)
 
-* Filtered search.
+* Filtered search. Look at [MQTCountryTableViewController.m](WorldFactsSQLite/MQTCountryTableViewController.m)
 
 Tested with iOS 7.1 and 8.0
 
