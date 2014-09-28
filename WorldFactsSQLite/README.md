@@ -10,7 +10,7 @@ From this app you can learn:
 
 * If version number is incremented in the the version table, the database in the document directory will be overwritten. A simple techique to update read only database with new version of app.
 
-* UITableView with dynamic sections and indexes. Look at [MQTCountryTableViewController.m](WorldFactsSQLite/MQTCountryTableViewController.m)
+* UITableView with dynamic sections and indexes. Look at [MQTCountryTableViewController.m](WorldFactsSQLite/MQTCountryTableViewController.m) at the method viewDidLoad() on how table sections are calculated from dynamic data.
 
 * Filtered search. Look at [MQTCountryTableViewController.m](WorldFactsSQLite/MQTCountryTableViewController.m)
 
