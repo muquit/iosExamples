@@ -51,6 +51,7 @@ Tested with iOS 7.1 and 8.0
     
 ## Screenshots
 
+### main screen
 ![main screen](screenshots/wf1.png)
 
 ## Copyright
