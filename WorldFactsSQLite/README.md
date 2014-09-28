@@ -48,6 +48,12 @@ In order to run/play, please open **WorldFactsSQLite.xcworkspace** in xcode (NOT
     252
     sqlite> select version_no from version;
     9
+    sqlite> select * from country order by country_name;
+    3|Afghanistan|Kabul|647500|249999|29121286|AS|.af|Afghani|93
+    15|Aland Islands|Mariehamn|0|0|26711|EU|.ax|Euro|+358-18
+    ..
+    249|Zambia|Lusaka|752614|290584|13460305|AF|.zm|Kwacha|260
+    250|Zimbabwe|Harare|390580|150802|11651858|AF|.zw|Dollar|263
     
 ## Screenshots
 
