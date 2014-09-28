@@ -44,10 +44,8 @@ In order to run/play, please open **WorldFactsSQLite.xcworkspace** in xcode (NOT
         version_no INTEGER,
         date DATE
     );
-
-    sqlite> sqlite> select count(*) from country;
+    sqlite> select count(*) from country;
     252
-    
     sqlite> select version_no from version;
     9
     
