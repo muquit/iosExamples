@@ -6,7 +6,7 @@ countries.sqlite.
 
 From this app you can learn:
 
-* Read data from [SQLite](http://www.sqlite.org/) with ease using [FMDB](https://github.com/ccgus/fmdb). [CountriesDatabase.m](/iosExamples/WorldFactsSQLite/WorldFactsSQLite/CountriesDatabase.m)
+* Read data from [SQLite](http://www.sqlite.org/) with ease using [FMDB](https://github.com/ccgus/fmdb). [CountriesDatabase.m](WorldFactsSQLite/CountriesDatabase.m)
 
 * If version number is incremented in the the version table, the database in the document directory will be overwritten. A simple techique to update read only database with new version of app.
 
