@@ -51,8 +51,14 @@ Tested with iOS 7.1 and 8.0
     
 ## Screenshots
 
-### main screen
+### Main View
 ![main screen](screenshots/wf1.png)
+
+### Search View
+![search view](screenshots/wf2.png)
+
+### Detail View
+![detail view](screenshots/wf3.png)
 
 ## Copyright
 MIT
