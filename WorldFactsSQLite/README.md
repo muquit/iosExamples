@@ -16,6 +16,38 @@ From this app you can learn:
 
 Tested with iOS 7.1 and 8.0
 
+## Schema
+
+    $ sqlite3 countries.sqlite 
+    SQLite version 3.7.13 2012-07-17 17:46:21
+    Enter ".help" for instructions
+    Enter SQL statements terminated with a ";"
+    sqlite> .schema
+    CREATE TABLE country
+    (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        country_name TEXT UNIQUE,
+        capital TEXT,
+        area_sqkm INTEGER,
+        area_sqmi INTEGER,
+        population INTEGER,
+        continent TEXT,
+        tld TEXT,
+        currency TEXT,
+        phone TEXT
+    );
+    CREATE TABLE version
+    (
+        id INTEGER PRIMARY KEY UNIQUE,
+        version_no INTEGER,
+        date DATE
+    );
+
+    sqlite> sqlite> select count(*) from country;
+    252
+    
+    sqlite> select version_no from version;
+    9
 
 ## Copyright
 MIT
