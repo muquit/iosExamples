@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		6219942219B27BA50045FEA6 /* MQTCountryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6219942119B27BA50045FEA6 /* MQTCountryTableViewController.m */; };
 		6219942519B27BFD0045FEA6 /* MQTCountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6219942419B27BFD0045FEA6 /* MQTCountryViewController.m */; };
-		62938BAE19B50F260060ED0D /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 62938BAD19B50F260060ED0D /* README.txt */; };
 		62938BB119B540690060ED0D /* MQTAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62938BB019B540690060ED0D /* MQTAboutViewController.m */; };
 		62938BB419B549D20060ED0D /* MQTCountryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 62938BB319B549D20060ED0D /* MQTCountryTableViewCell.m */; };
 		629EFD1219B277FC006CB05E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 629EFD1119B277FC006CB05E /* Foundation.framework */; };
@@ -52,7 +51,6 @@
 		6219942119B27BA50045FEA6 /* MQTCountryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTCountryTableViewController.m; sourceTree = "<group>"; };
 		6219942319B27BFD0045FEA6 /* MQTCountryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTCountryViewController.h; sourceTree = "<group>"; };
 		6219942419B27BFD0045FEA6 /* MQTCountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTCountryViewController.m; sourceTree = "<group>"; };
-		62938BAD19B50F260060ED0D /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		62938BAF19B540690060ED0D /* MQTAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTAboutViewController.h; sourceTree = "<group>"; };
 		62938BB019B540690060ED0D /* MQTAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQTAboutViewController.m; sourceTree = "<group>"; };
 		62938BB219B549D20060ED0D /* MQTCountryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTCountryTableViewCell.h; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 		629EFD0519B277FC006CB05E = {
 			isa = PBXGroup;
 			children = (
-				62938BAD19B50F260060ED0D /* README.txt */,
 				629EFD1719B277FC006CB05E /* WorldFactsSQLite */,
 				629EFD3619B277FC006CB05E /* WorldFactsSQLiteTests */,
 				629EFD1019B277FC006CB05E /* Frameworks */,
@@ -319,7 +316,6 @@
 				629EFD1C19B277FC006CB05E /* InfoPlist.strings in Resources */,
 				629EFD2519B277FC006CB05E /* Main.storyboard in Resources */,
 				62EB55EB19B284230056FCFB /* README.txt in Resources */,
-				62938BAE19B50F260060ED0D /* README.txt in Resources */,
 				62EB55E619B284060056FCFB /* countries.sql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
